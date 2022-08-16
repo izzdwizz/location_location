@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
+import All from './pages/AllLocations';
+import NewLocations from './pages/NewLocations';
+import Favorites from './pages/Favorites';
+import Layout from './components/layout/layout';
+import './index.css';
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  return <div>
+  
+    <Layout>
+        <Routes>
 
-export default App;
+            <Route path='/' element={<All/>}/>
+            <Route path='new-location' element={<NewLocations/>}/>
+            <Route path='favorites' element={<Favorites/>} />
+
+        </Routes>
+    
+    </Layout>
+
+</div>
+    
+    
+  ;
+}
+ export default App;

@@ -1,13 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+
+* {
+  box-sizing: border-box;
+} 
+
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
+   margin: 0; 
+   margin-top: 0;
+
+  /* background-color:#fcfafa; */
+  background-color: rgb(243, 255, 251);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2 {
+  color: #333333;
+}
+
+.btn {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #800040;
+  color: white;
+  border: 1px solid #800040;
+  margin: 0 1rem;
+}
+
+.btn:hover {
+  background-color: #9c1458;
+  border-color: #9c1458;
+}
+
+.btn--alt {
+  background-color: transparent;
+  color: #800040;
+}
+
+.btn--alt:hover {
+  background-color: #f8dae9;
+}
+
+.card {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  width: 20rem;
+}
+
+.actions {
+  text-align: right;
+}
+
+.apps {
+ color:#9c1458 !important;
+
+}
+
+.modal {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 30rem;
+  z-index: 10;
+  position: fixed;
+  top: 20vh;
+  left: calc(50% - 15rem);
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.cards {
+  font-size: 25px;
+  margin-bottom: 1rem;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom:10px;
+  background-color: #035c62;
+  color: white;
+}
+
+.cardz {
+  font-size: 25px;
+  margin-bottom: 1rem;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom:10px;
+  border-radius: 0;
+  box-shadow: 0 0px 0px rgb(255, 254, 254);
+  background-color: #035c62;
+  color: white;
+}
+
+.sect {
+ /* background-color:#fcfafa; */
+ background-color: rgb(243, 255, 251);
+
+}
+
+.exp {
+
+   /* background-color: #76f4af; */
+   /* background-color: black; */
+   /* background-color: rgba(0, 125, 113, 0.685); */
+   /* background-color: #686666; */
+   background-color: #035c62;
+   margin-bottom:5px;
+   padding: 10px;
+  color:rgb(255, 249, 249);
+
+}
+
+
+.spin {
+
+text-align: center;
+font-size:100px;
+/* padding: 40px; */
+margin: 50%; 
+
 }
